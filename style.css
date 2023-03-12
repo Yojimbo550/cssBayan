@@ -62,22 +62,27 @@ body {
   display: none;
   text-align: center;
 }
-
+/* icons ok */
 .accordeon-plusIcon, .accordeon-closeIcon {
   display: none;
 }
-
+/* plusicon ok */
 .accordeon:hover .accordeon-plusIcon {
   display: block;
 }
-
+/* show pictures onclick ok */
 .accordeon-input:checked + .accordeon-text {
   display: block;
+  background-color: blueviolet;
+  
 }
 
-/* .accordeon-input:checked + .accordeon-title {
-  color: rgb(11, 11, 37);
-} */
+.accordeon-item:hover .accordeon-text {
+  display:block;
+}
+/* color for picture */
+
+
 .accordeon-input:checked .accordeon-plusIcon {
   display: none;
 }
@@ -87,17 +92,14 @@ body {
 .accordeon-item:hover .accordeon-plusIcon{
   display: none;
 }
-.accordeon-item:hover .accordeon-text {
-  display:block;
-}
-
+/* mem text color cursor */
 .accordeon:hover .accordeon-title {
   color: blue;
 }
 
 .accordeon-img {
   margin-top: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .icon {
