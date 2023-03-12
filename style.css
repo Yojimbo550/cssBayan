@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body, p, input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 4px;
+  background-color: #fffded;
+}
+
+.pageTitle {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.accordeon-item {
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px;
+  transition: background .5s ease-out;
+}
+
+.accordeon-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color:rgb(10, 8, 12);
+}
+
+.accordeon-input{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.accordeon-text {
+  display: none;
+  text-align: center;
+}
+
+.accordeon-plusIcon, .accordeon-closeIcon {
+  display: none;
+}
+
+.accordeon:hover .accordeon-plusIcon {
+  display: block;
+}
+
+.accordeon-input:checked + .accordeon-text {
+  display: block;
+}
+
+.accordeon-input:checked + .accordeon-title {
+  color: blue;
+}
+
+.accordeon-input:checked accordeon-plusIcon {
+  display: none;
+}
+
+.accordeon:hover .accordeon-title {
+  color: blue;
+}
+
+.accordeon-img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
