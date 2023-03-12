@@ -2,7 +2,7 @@
 
 Скриншот: 
 
-Развертывание: https://Yojimbo550.github.io/cssBayan/cssBayan/index.html
+Развертывание: https://Yojimbo550.github.io/cssBayan/index.html
 
 Начало: 2023-03-10 03:00, окончание: 2023-03-13 02:59
 
